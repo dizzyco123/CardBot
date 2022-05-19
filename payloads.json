@@ -1,0 +1,289 @@
+{
+  "functions/interactions/buttons.js": {
+    "event": {
+      "version": 1,
+      "type": 3,
+      "token": "aW50ZXJhY3Rpb246OTUyMjEwMjg5OTc2MzExODg5OjRNR1hka29CNzJsbER6RHFlOFp6WHdNcTM3MXI5MnVaUGE4WGFieEpFZVQza1lFQTVOUUxPa2lLV0RQYXJsQVAySzBPbVBSS1F3UlBSV3dIWDNuazF6dllheGJlemdMVWFneTE0QThUWWFsdFJzVEdkQ2dEWXFPSkNuSmVvTlpI",
+      "message": {
+        "webhook_id": "878979414103306270",
+        "type": 20,
+        "tts": false,
+        "timestamp": "2022-03-12T14:22:59.470000+00:00",
+        "pinned": false,
+        "mentions": [],
+        "mention_roles": [],
+        "mention_everyone": false,
+        "interaction": {
+          "user": {
+            "username": "𝙍𝙞𝙘𝙤",
+            "public_flags": 256,
+            "id": "629727156938997760",
+            "discriminator": "0135",
+            "avatar": "269d23a2a9e08f745057d8efa22f4f78"
+          },
+          "type": 2,
+          "name": "transaction",
+          "id": "952210092533620756"
+        },
+        "id": "952210101769470002",
+        "flags": 0,
+        "embeds": [
+          {
+            "type": "rich",
+            "title": "Confirm Transaction",
+            "timestamp": "2022-03-12T14:22:59.189000+00:00",
+            "footer": {
+              "text": "Made by 𝙍𝙞𝙘𝙤#0135"
+            },
+            "description": "Please confirm your transaction of :coin:1000 to <@!936620566058795018>.",
+            "color": 5932735,
+            "author": {
+              "proxy_icon_url": "https://images-ext-2.discordapp.net/external/gFxWODyQ7txCKmsvhjRxxXrTAi8hBPUjmxssE78oglE/https/cdn.discordapp.com/avatars/936620566058795018/125d5fc79503f58bb986cfed48e3c470.png",
+              "name": "Boop",
+              "icon_url": "https://cdn.discordapp.com/avatars/936620566058795018/125d5fc79503f58bb986cfed48e3c470.png"
+            }
+          }
+        ],
+        "edited_timestamp": null,
+        "content": "",
+        "components": [
+          {
+            "type": 1,
+            "components": [
+              {
+                "type": 2,
+                "style": 3,
+                "label": "Confirm",
+                "custom_id": "transaction_confirm"
+              },
+              {
+                "type": 2,
+                "style": 4,
+                "label": "Refuse",
+                "custom_id": "transaction_refuse"
+              }
+            ]
+          }
+        ],
+        "channel_id": "893561656620228628",
+        "author": {
+          "username": "Bloob",
+          "public_flags": 0,
+          "id": "878979414103306270",
+          "discriminator": "8972",
+          "bot": true,
+          "avatar": "0c4357a3b351f00ca68d4784cb6f8271"
+        },
+        "attachments": [],
+        "application_id": "878979414103306270"
+      },
+      "member": {
+        "user": {
+          "username": "𝙍𝙞𝙘𝙤",
+          "public_flags": 256,
+          "id": "629727156938997760",
+          "discriminator": "0135",
+          "avatar": "269d23a2a9e08f745057d8efa22f4f78"
+        },
+        "roles": [
+          "923358527337152572",
+          "947973504387670036"
+        ],
+        "premium_since": null,
+        "permissions": "2199023255551",
+        "pending": false,
+        "nick": "Rico",
+        "mute": false,
+        "joined_at": "2021-07-26T18:38:52.919000+00:00",
+        "is_pending": false,
+        "deaf": false,
+        "communication_disabled_until": null,
+        "avatar": null,
+        "permission_names": [
+          "CREATE_INSTANT_INVITE",
+          "KICK_MEMBERS",
+          "BAN_MEMBERS",
+          "ADMINISTRATOR",
+          "MANAGE_CHANNELS",
+          "MANAGE_GUILD",
+          "ADD_REACTIONS",
+          "VIEW_AUDIT_LOG",
+          "PRIORITY_SPEAKER",
+          "STREAM",
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY",
+          "MENTION_EVERYONE",
+          "USE_EXTERNAL_EMOJIS",
+          "VIEW_GUILD_INSIGHTS",
+          "CONNECT",
+          "SPEAK",
+          "MUTE_MEMBERS",
+          "DEAFEN_MEMBERS",
+          "MOVE_MEMBERS",
+          "USE_VAD",
+          "CHANGE_NICKNAME",
+          "MANAGE_NICKNAMES",
+          "MANAGE_ROLES",
+          "MANAGE_WEBHOOKS",
+          "MANAGE_EMOJIS",
+          "USE_SLASH_COMMANDS",
+          "REQUEST_TO_SPEAK",
+          "MANAGE_THREADS",
+          "USE_PUBLIC_THREADS",
+          "USE_PRIVATE_THREADS",
+          "USE_EXTERNAL_STICKERS",
+          "SEND_MESSAGES_IN_THREADS",
+          "START_EMBEDDED_ACTIVITIES",
+          "MODERATE_MEMBERS"
+        ]
+      },
+      "locale": "en-GB",
+      "id": "952210289976311889",
+      "guild_locale": "en-US",
+      "guild_id": "869287677558673408",
+      "data": {
+        "custom_id": "transaction_confirm",
+        "component_type": 2
+      },
+      "channel_id": "893561656620228628",
+      "application_id": "878979414103306270",
+      "received_at": "2022-03-12T14:23:44.405Z"
+    }
+  },
+  "functions/commands/currency/transaction.js": {
+    "event": {
+      "version": 1,
+      "type": 2,
+      "token": "aW50ZXJhY3Rpb246OTUyMTc3ODU3NTIwNjAzMTU2Okx2UDZIQVNVU3g0azl0WUdnclh6ZEtVRlFRZFAwb0Z4bmJ6aXF0TVlNSWl5RElTRnZGc2p6cDJFU0JsZDduRklqREMxSUJ5aThjbmhKTlZhenZBUE9uUnVEUmpnYXlPeFpsQU02dTFuRVlaSmF6SnNhZEFKOVE0bDk2MzN6dVM5",
+      "member": {
+        "user": {
+          "username": "𝙍𝙞𝙘𝙤",
+          "public_flags": 256,
+          "id": "629727156938997760",
+          "discriminator": "0135",
+          "avatar": "269d23a2a9e08f745057d8efa22f4f78"
+        },
+        "roles": [
+          "923358527337152572",
+          "947973504387670036"
+        ],
+        "premium_since": null,
+        "permissions": "2199023255551",
+        "pending": false,
+        "nick": "Rico",
+        "mute": false,
+        "joined_at": "2021-07-26T18:38:52.919000+00:00",
+        "is_pending": false,
+        "deaf": false,
+        "communication_disabled_until": null,
+        "avatar": null,
+        "permission_names": [
+          "CREATE_INSTANT_INVITE",
+          "KICK_MEMBERS",
+          "BAN_MEMBERS",
+          "ADMINISTRATOR",
+          "MANAGE_CHANNELS",
+          "MANAGE_GUILD",
+          "ADD_REACTIONS",
+          "VIEW_AUDIT_LOG",
+          "PRIORITY_SPEAKER",
+          "STREAM",
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY",
+          "MENTION_EVERYONE",
+          "USE_EXTERNAL_EMOJIS",
+          "VIEW_GUILD_INSIGHTS",
+          "CONNECT",
+          "SPEAK",
+          "MUTE_MEMBERS",
+          "DEAFEN_MEMBERS",
+          "MOVE_MEMBERS",
+          "USE_VAD",
+          "CHANGE_NICKNAME",
+          "MANAGE_NICKNAMES",
+          "MANAGE_ROLES",
+          "MANAGE_WEBHOOKS",
+          "MANAGE_EMOJIS",
+          "USE_SLASH_COMMANDS",
+          "REQUEST_TO_SPEAK",
+          "MANAGE_THREADS",
+          "USE_PUBLIC_THREADS",
+          "USE_PRIVATE_THREADS",
+          "USE_EXTERNAL_STICKERS",
+          "SEND_MESSAGES_IN_THREADS",
+          "START_EMBEDDED_ACTIVITIES",
+          "MODERATE_MEMBERS"
+        ]
+      },
+      "locale": "en-GB",
+      "id": "952177857520603156",
+      "guild_locale": "en-US",
+      "guild_id": "869287677558673408",
+      "data": {
+        "type": 1,
+        "resolved": {
+          "users": {
+            "878979414103306270": {
+              "username": "Bloob",
+              "public_flags": 0,
+              "id": "878979414103306270",
+              "discriminator": "8972",
+              "bot": true,
+              "avatar": "0c4357a3b351f00ca68d4784cb6f8271"
+            }
+          },
+          "members": {
+            "878979414103306270": {
+              "roles": [
+                "944162540420759584",
+                "923358943235936257"
+              ],
+              "premium_since": null,
+              "permissions": "2199023255551",
+              "pending": false,
+              "nick": null,
+              "joined_at": "2022-02-18T09:24:51.345000+00:00",
+              "is_pending": false,
+              "communication_disabled_until": null,
+              "avatar": null
+            }
+          }
+        },
+        "options": [
+          {
+            "type": 1,
+            "options": [
+              {
+                "value": "878979414103306270",
+                "type": 6,
+                "name": "recipient"
+              },
+              {
+                "value": 10,
+                "type": 10,
+                "name": "amount"
+              }
+            ],
+            "name": "create"
+          }
+        ],
+        "name": "transaction",
+        "id": "952166522334367814",
+        "guild_id": "869287677558673408"
+      },
+      "channel_id": "893561656620228628",
+      "application_id": "878979414103306270",
+      "received_at": "2022-03-12T12:14:51.909Z"
+    }
+  }
+}

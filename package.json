@@ -1,0 +1,9 @@
+{
+  "name": "new-project",
+  "author": "cesstial",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "ejs": "^3.1.6"
+  }
+}
