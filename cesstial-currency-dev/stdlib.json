@@ -1,0 +1,121 @@
+{
+  "name": "cesstial/currency",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/extra-function/membersUpdate.js": {
+      "name": "discord.guild.member.update"
+    },
+    "functions/extra-function/taxChanger.js": {
+      "name": "scheduler.daily",
+      "subtype": {
+        "time": "00:00 (12:00am)",
+        "timezone": "Europe — Amsterdam, NL (+01:00, +02:00 DST)"
+      }
+    },
+    "functions/interactions/buttons.js": {
+      "name": "discord.message.button.interaction.all"
+    },
+    "functions/extra-function/createCommands.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/commands/currency/balance.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "balance"
+      }
+    },
+    "functions/commands/currency/deposit.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "deposit"
+      }
+    },
+    "functions/commands/currency/shop.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "shop"
+      }
+    },
+    "functions/commands/currency/tax.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "tax"
+      }
+    },
+    "functions/commands/currency/transaction.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "transaction"
+      }
+    },
+    "functions/commands/currency/withdraw.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "withdraw"
+      }
+    },
+    "functions/commands/user/inventory.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "inventory"
+      }
+    },
+    "functions/commands/user/profile.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "profile"
+      }
+    },
+    "functions/commands/play/duel.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "duel"
+      }
+    },
+    "functions/commands/user/cards.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "cards"
+      }
+    },
+    "functions/commands/play/open.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "open"
+      }
+    },
+    "functions/commands/user/leaderboard.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "leaderboard"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "EMBEDCOLOR",
+      "description": "The color for the embeds, format: 0xHEX_CODE. Example: 0x5a86bf"
+    },
+    {
+      "name": "TAX",
+      "description": "\"yes\" if you want to include tax for transactions above the 1000 coins. \"no\" for no tax."
+    },
+    {
+      "name": "CURRENCY_EMOJI",
+      "description": "The emoji/symbol you want to set as currency symbol."
+    },
+    {
+      "name": "CommandCreation",
+      "description": "\"yes\" if you want the commands to be created for you. \"no\" if not."
+    },
+    {
+      "name": "GuildId",
+      "description": "The ID of your guild."
+    },
+    {
+      "name": "Audit_Log_Channel",
+      "description": "The ID of the channel where all transactions between users are being logged."
+    }
+  ]
+}
